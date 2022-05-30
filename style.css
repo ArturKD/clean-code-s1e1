@@ -38,7 +38,7 @@ body {
 
 .task-list {
     margin:0;
-    padding: 0px;
+    padding: 0;
 }
 
 .input {
@@ -47,7 +47,7 @@ body {
 
 .button {
     background: none;
-    border: 0px;
+    border: 0;
     color: #888;
     font-size: 15px;
     width: 60px;
@@ -71,7 +71,7 @@ body {
     width: 318px;
 }
 
-.input[type="text"] {
+.input__text {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -110,7 +110,7 @@ label[for='new-task'] {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.input__checkbox {
     margin: 0 10px;
 }
 
@@ -121,7 +121,7 @@ li > label {
     width: 226px;
 }
 
-li >    input[type="text"] {
+.edit-task__input{
     width: 226px
 }
 
@@ -137,18 +137,18 @@ li >    input[type="text"] {
 
 /* Completed */
 ul#completed-tasks label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 ul li input[type=text] {
-    display:none
+    display:none;
 }
 
 ul li.editMode input[type=text] {
     display:inline-block;
-    width:224px
+    width:224px;
 }
 
 ul li.editMode label {
